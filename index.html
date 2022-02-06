@@ -1,0 +1,201 @@
+<html>
+<style>
+.card-image {
+	display: block;
+	min-height: 20rem;
+	background: #fff center center no-repeat;
+	background-size: cover;
+}
+
+.card-image > img {
+	display: block;
+	width: 100%;
+	opacity: 0; 
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.input{
+    border-radius: 5px ;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20;
+}
+
+form {
+	display: grid;
+	justify-content: center;
+}
+
+#btn {
+    padding: 20px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #303030;
+}
+
+#btn:hover {
+    padding: 25px 30px;
+    border: 3px solid #ababab;
+    border-radius: 40px;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0);
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+</style>
+<body>
+<ul class="card-list">
+
+	<li class="card">
+		<a class="card-image" href="array_sum.jpg" target="_blank" style="background-image: url(array_sum.jpg);">
+			<img src="array_sum.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>array_sum</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="box_blur.jpg" target="_blank" style="background-image: url(box_blur.jpg);">
+			<img src="box_blur.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>box_blur</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="edgeFilter.jpg" target="_blank" style="background-image: url(edgeFilter.jpg);">
+			<img src="edgeFilter.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>edgeFilter</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="emboss.jpg" target="_blank" style="background-image: url(emboss.jpg);">
+			<img src="emboss.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>emboss</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="findedgeFilter.jpg" target="_blank" style="background-image: url(findedgeFilter.jpg);">
+			<img src="findedgeFilter.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>findedgeFilter</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="gaussian_blur.jpg" target="_blank" style="background-image: url(gaussian_blur.jpg);">
+			<img src="gaussian_blur.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>gaussian_blur</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="sharpenMatrix.jpg" target="_blank" style="background-image: url(sharpenMatrix.jpg);">
+			<img src="sharpenMatrix.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>sharpenMatrix</h2>
+		</a>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="sobel.jpg" target="_blank" style="background-image: url(sobel.jpg);">
+			<img src="sobel.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>sobel</h2>
+		</a>
+	</li>
+</ul>
+
+<ul class="card-list">
+	
+	<li class="card">
+		<a class="card-image" href="camera.jpg" target="_blank" style="background-image: url(camera.jpg);">
+			<img src="camera.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>camera</h2>
+		</a>
+	</li>
+
+	<li class="card">
+		<form style="align-content: center;" action="add.php" method="get">
+			<div><input type="number" class="input" name="x1"><input class="input" type="number" name="x2"><input class="input" type="number" name="x3"></div>
+			<div><input type="number" class="input" name="y1"><input class="input" type="number" name="y2"><input class="input" type="number" name="y3"></div>
+			<div><input type="number" class="input" name="z1"><input class="input" type="number" name="z2"><input class="input" type="number" name="z3"></div>
+			<div style="padding:18px 0; display: flex; justify-content: center;"><input type="submit" id="btn"></div>
+			</form>
+	</li>
+	
+	<li class="card">
+		<a class="card-image" href="pru.jpg" target="_blank" style="background-image: url(pru.jpg);" data-image-full="pru.jpg">
+			<img src="pru.jpg" />
+		</a>
+		<a class="card-description">
+			<h2>your_filter</h2>
+		</a>
+	</li>
+	
+</ul>
+</body>
+</html>
